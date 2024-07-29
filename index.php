@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Asstral by HTML5 UP</title>
+		<title>Hundumzufrieden Darmstadt</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,6 @@
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -101,16 +100,16 @@
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" id="name" name="name" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="email" id="email" name="email" placeholder="Email" />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" id="subject" name="subject" placeholder="Subject" />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message" />
@@ -119,13 +118,36 @@
 									</div>
 								</form>
 							</article>
+							<?php
+								if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    							// Retrieve form data
+    							$name = htmlspecialchars($_POST['name']);
+    							$email = htmlspecialchars($_POST['email']);
+    							$message = htmlspecialchars($_POST['message']);
+
+    							// Email configuration
+    							$to = "ahmetaytac.aa@googlemail.com"; // Replace with your email address
+    							$subject = "New Contact Form Submission";
+    							$body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+    							$headers = "From: $email";
+
+    							// Send email
+    							if (mail($to, $subject, $body, $headers)) {
+    							    echo "Message sent successfully!";
+    							} else {
+    							    echo "Failed to send message. Please try again later.";
+    							}
+								} else {
+									echo "Invalid request method.";
+								}
+							?>
 
 					</div>
 
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Alina Aytac</li>
 						</ul>
 					</div>
 
