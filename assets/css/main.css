@@ -1831,7 +1831,7 @@ input, select, textarea {
 				-webkit-transition: opacity .25s ease-in-out;
 				-ms-transition: opacity .25s ease-in-out;
 				transition: opacity .25s ease-in-out;
-				width: 5.5em;
+				width: 6em;
 				margin-left: -2.75em;
 			}
 
