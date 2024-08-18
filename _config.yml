@@ -1,0 +1,7 @@
+title: "Hundumzufrieden Darmstadt"
+description: "Dogwalking rund um Darmstadt"
+baseurl: "" # Leave this empty if you're using a custom domain.
+url: "https://www.hundumzufrieden-darmstadt.de" # Replace with your custom domain.
+
+plugins:
+  - jekyll-sitemap
