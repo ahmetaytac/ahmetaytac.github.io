@@ -1768,14 +1768,16 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 4.25em;
 		cursor: default;
-		position: fixed;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		position: sticky;
 		top: 0;
-    	left: 0;
-   		width: 100%;
-    	z-index: 1000; /* Make sure it's on top of other content */
-    	background-color: #F9E7CF; /* Optional: set a background color */
+		z-index: 10000;
+		background-color: #F9E7CF;
+		height: 4.25em;
+		align-items: center;
 	}
 
 		#nav a {
@@ -1805,7 +1807,7 @@ input, select, textarea {
 
 			#nav a:after {
 				content: '';
-				display: block;
+				display: none;
 				position: absolute;
 				left: 50%;
 				bottom: -0.75em;
@@ -1881,7 +1883,7 @@ input, select, textarea {
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
-		padding: 65px 0;
+		padding: 4em 0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1949,8 +1951,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		overflow: hidden;
-		width: 90%;
-		top:0;
+		width: 100%;
 		background: #545454;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -1966,7 +1967,6 @@ input, select, textarea {
 			transition: opacity 0.25s ease-in-out;
 			margin-bottom: 0;
 			position: relative;
-			padding: 0;
 			width: 100%;
 			background-color: #545454
 		}
@@ -1975,13 +1975,6 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-			@media screen and (max-width: 736px) {
-
-				#main > .panel {
-					padding: 2em 1.5em 1.5em 1.5em;
-				}
-
-			}
 
 			#main > .panel.intro {
 				padding: 0;
