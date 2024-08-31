@@ -2188,3 +2188,22 @@ input, select, textarea {
 			}
 
 		}
+
+		.button-container {
+			position: relative;
+			background-color: #f0f0f0; /* Background color just for visual reference */
+		}
+		
+		.specific-button {
+			position: absolute;
+			top: 10%;  /* Center the button vertically within the container */
+			left: 50%; /* Center the button horizontally within the container */
+			padding: 00px 20px;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 140px;
+			height: 140px;
+		}
