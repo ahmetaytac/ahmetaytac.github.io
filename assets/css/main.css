@@ -1329,6 +1329,14 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	.contact-container{
+		max-width:110px;
+	}
+
+	.contact-margin{
+		margin-top:-150px;
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, textarea, select {
@@ -1351,12 +1359,28 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			.contact-container{
+				max-width:50px;
+			}
+
+			.contact-margin{
+				margin-top:-50px;
+			}
+
 		}
 
 		@media screen and (max-width: 360px) {
 
 			body, input, textarea, select {
 				font-size: 11pt;
+			}
+
+			.contact-container{
+				max-width:50px;
+			}
+
+			.contact-margin{
+				margin-top:-50px;
 			}
 
 		}
@@ -2189,21 +2213,8 @@ input, select, textarea {
 
 		}
 
-		.button-container {
-			position: relative;
-			background-color: #f0f0f0; /* Background color just for visual reference */
+		.contact-button{
+			object-fit: contain;
 		}
+
 		
-		.specific-button {
-			position: absolute;
-			top: 10%;  /* Center the button vertically within the container */
-			left: 50%; /* Center the button horizontally within the container */
-			padding: 00px 20px;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
-			width: 140px;
-			height: 140px;
-		}
