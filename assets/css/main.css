@@ -1903,7 +1903,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 45em;
+		width: 1080px;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
