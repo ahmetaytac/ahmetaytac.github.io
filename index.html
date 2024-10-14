@@ -22,12 +22,13 @@
 		<meta property="og:description" content="Dogwalking rund um Darmstadt">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css" charset="utf-8" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper-->
 			<div id="wrapper">
-				<h1><b>*SEITE IST IM AUFBAU*</b></h1>
+				<h1 style="font-family:'lemon_tuesdayregular'; color:green"><b>*SEITE IST IM AUFBAU*</b></h1>
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#home" class="icon solid fa-home" style="color:#545454"><span>Home</span></a>
@@ -118,6 +119,24 @@
 						</div>
 					</article>
 
+					<!-- FAQ -->
+					<article id="faq" class="panel">
+						<div style="width: 100%">
+							<img src="images/FAQs.svg" alt="" style="max-width: 100%;"></a>
+						</div>
+						<div class="accordion">
+							<h3 class="accordion-header" style="color:#a7c0b0">Mit wie vielen Hunden gehst du in der Hundegruppe spazieren?</h3>
+							<div class="accordion-content">
+								<p>Content for Section 1...</p>
+							</div>
+						
+							<h3 class="accordion-header" style="font-family:'Courier New', Courier, monospace">Section 2</h3>
+							<div class="accordion-content">
+								<p>Content for Section 2...</p>
+							</div>
+						</div>
+					</article>
+
 					<!-- Impressum -->
 					<article id="impressum" class="panel">
 						<div style="width: 100%">
@@ -133,10 +152,11 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>AGB</li>
-							<li>Datenschutz</li>
-							<li><a href="#impressum" style="color:#545454">Impressum</a></li>
-							<li><a href="#contact" style="color:#545454">Kontakt</a></li>
+							<li><a style="font-family:'Source Sans Pro', sans-serif; color:#545454">AGB</a></li>
+							<li><a style="font-family:'Source Sans Pro', sans-serif; color:#545454">Datenschutz</a></li>
+							<li><a href="#impressum" style="font-family:'Source Sans Pro', sans-serif; color:#545454">Impressum</a></li>
+							<li><a href="#contact" style="font-family:'Source Sans Pro', sans-serif; color:#545454">Kontakt</a></li>
+							<li><a href="#faq" style="font-family:'Source Sans Pro', sans-serif; color:#545454">FAQ</a></li>
 							<li><a href="https://www.instagram.com/hundumzufrieden_darmstadt/" class="fab fa-instagram" style="color:#545454"></a></li>
 						</ul>
 					</div>
@@ -149,6 +169,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$(".accordion-header").click(function(){
+						// Toggle only the clicked section
+						$(this).next(".accordion-content").slideToggle();
+					});
+				});
+				</script>
 	</body>
 </html>

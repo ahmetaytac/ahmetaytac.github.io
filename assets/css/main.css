@@ -1322,7 +1322,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'lemon_tuesdayregular';
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -2217,4 +2217,22 @@ input, select, textarea {
 			object-fit: contain;
 		}
 
+		.accordion-content {
+			display: none; /* Initially hide the content */
+			padding: 15px;
+			background-color: #545454;
+		}
+		.accordion-header {
+			background-color: #545454;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+		}
+		.accordion-header:hover {
+			background-color: #808080;
+		}
 		
