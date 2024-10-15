@@ -2235,4 +2235,23 @@ input, select, textarea {
 		.accordion-header:hover {
 			background-color: #808080;
 		}
+
+		.playpen-sans-xarrovv {
+		  font-family: "Playpen Sans", cursive;
+		  font-optical-sizing: auto;
+		  font-weight: 200;
+		  font-style: normal;
+		}
+
+		.amatic-sc-regular {
+			font-family: "Amatic SC", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		  }
+		  
+		.amatic-sc-bold {
+		font-family: "Amatic SC", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		}
 		
